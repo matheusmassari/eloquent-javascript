@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <h1>Title</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id
+            temporibus, fugit quo corrupti veniam aperiam qui hic fugiat sequi
+            reiciendis ullam explicabo dignissimos dolore nostrum repudiandae
+            illo sed exercitationem totam, molestiae a assumenda nulla
+            similique! Accusantium vitae esse quae incidunt nulla odit
+            consequuntur nam voluptatibus voluptates id! Deserunt, assumenda!
+            Quia nisi, praesentium reiciendis quidem et molestias! Quod odio cum
+            perferendis deleniti commodi error libero ipsum, obcaecati fugiat
+            unde itaque consequuntur placeat expedita ab a rerum possimus iste
+            odit eius distinctio laudantium inventore? Atque, eaque. Natus,
+            optio numquam, id, quas possimus incidunt minima quis quasi enim sed
+            aperiam nihil perferendis.
+        </p>
+    </body>
+
+    <script>
+        const paragraph = document.querySelector("p");
+        paragraph.innerHTML = paragraph.innerHTML.split(" ").map((word) => {
+            return word.length > 8
+                ? `<span style="background-color: yellow" > ${word} </span>`
+                : word;
+        }).join(" ");
+    </script>
+</html>
